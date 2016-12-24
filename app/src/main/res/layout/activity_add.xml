@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_extended"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.tiger.hw1.ListExtendedActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivPhotoAdd"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ivPhotoAdd"
+        android:id="@+id/rlEditText">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNameExt"
+            android:background="@drawable/tvborders"
+            android:layout_marginTop="15dp"
+            android:hint="Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPhoneNumberExt"
+            android:layout_below="@id/etNameExt"
+            android:background="@drawable/tvborders"
+            android:layout_marginTop="15dp"
+            android:hint="Phone Number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etAddressExt"
+            android:layout_below="@id/etPhoneNumberExt"
+            android:background="@drawable/tvborders"
+            android:layout_marginTop="15dp"
+            android:hint="Address"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etEmail"
+            android:layout_below="@id/etAddressExt"
+            android:background="@drawable/tvborders"
+            android:layout_marginTop="15dp"
+            android:hint="E-mail"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDescription"
+            android:layout_below="@id/etEmail"
+            android:background="@drawable/tvborders"
+            android:layout_marginTop="15dp"
+            android:hint="Description"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ivPhotoAdd"
+        android:id="@+id/rlTextView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNameExt"
+            android:background="@drawable/tvborders"
+            android:layout_marginTop="15dp"
+            android:hint="Name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPhoneNumberExt"
+            android:layout_below="@id/tvNameExt"
+            android:background="@drawable/tvborders"
+            android:layout_marginTop="15dp"
+            android:hint="Phone Number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAddressExt"
+            android:layout_below="@id/tvPhoneNumberExt"
+            android:background="@drawable/tvborders"
+            android:layout_marginTop="15dp"
+            android:hint="Address"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEmail"
+            android:layout_below="@id/tvAddressExt"
+            android:background="@drawable/tvborders"
+            android:layout_marginTop="15dp"
+            android:hint="E-mail"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDescription"
+            android:layout_below="@id/tvEmail"
+            android:background="@drawable/tvborders"
+            android:layout_marginTop="15dp"
+            android:hint="Description"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flAdd"
+        android:background="#33000000"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>
